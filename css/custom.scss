@@ -1,0 +1,12 @@
+$form-floating-label-transform: scale(.85) translateY(-1.8rem) translateX(.5rem);
+// $box-shadow:none;
+$secondary:#A5A5A5;
+$input-focus-border-color: $secondary;
+$input-border-color: $secondary;
+$input-placeholder-color: $secondary;
+$input-color:black;
+$primary: #3BCAC9;
+$form-floating-label-opacity: 1;
+
+
+@import "./theme.scss";

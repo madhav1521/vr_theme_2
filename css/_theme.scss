@@ -1,0 +1,186 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/* 
+http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* General 
+--------------------------------------------------------------------------------------------------------*/
+* { outline: none !important; }
+.window-resizing *, body:not(.page-loaded) *{transition: none!important; }
+a{transition: all 0.3s;}
+html, body { min-width: 320px; min-height: 100vh; }
+body { font-size: 16px; line-height: 22px; font-family: 'Poppins', sans-serif; -ms-overflow-style: scrollbar; -webkit-font-smoothing: subpixel-antialiased;}
+.wrapper { min-height: 100vh; }
+a { color: #000; text-decoration: none; }
+a:hover { color: #999; text-decoration: none; }
+h1, h2, h3, h4, h5, h6 { line-height: 1.2em; padding: 0 0 20px; }
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { display: block; }
+h1 { font-size: 65px;}
+h2 { }
+h3 { font-size: 30px;}
+h4 { font-size: 20px; }
+h5 { }
+h6 { font-size: 15px;}
+// p { padding: 0 0 20px; }
+input[type=text], input[type=email], input[type=password], textarea { -webkit-appearance: none; appearance: none; }
+::-webkit-input-placeholder { color: #000; }
+::-moz-placeholder { color: #000; }
+:-ms-input-placeholder { color: #000; }
+:-moz-placeholder { color: #000; }
+::-moz-focus-inner { border: 0; }
+select:-moz-focusring { color: transparent; text-shadow: 0 0 0 #000; }
+option:not(:checked) { color: black; }
+
+/* Login page
+--------------------------------------------------------------------------------------------------------*/
+/* Header
+--------------------------------------------------------------------------------------------------------*/
+.main{ background-image: url('../images/bg-image.jpg'); padding: 0 80px ;min-height: 100vh; background-size: cover; background-position: center; background-repeat: no-repeat;}
+.header{padding-top: 80px;}
+
+
+/* Main Content
+--------------------------------------------------------------------------------------------------------*/
+.container-fluid{
+    align-items: center;
+    padding-top: 120px;
+    // min-height: 100vh;
+}
+.text-content{color:#fff;padding-top:100px;
+        h1 { font-weight: 300;
+            strong{font-weight: 700;
+            }
+        }
+        .lorem{size: 22px;font-weight: 400;
+        } 
+}
+.login-box{
+    padding: 36px 42px;
+    border-radius: 5px;
+    
+}
+.login-content{width: 100%;}
+
+@mixin repeat{
+    top: 15px;
+    background-color: #fff;
+    color: #A5A5A5;
+    padding: 0 5px;
+    left: 5px;
+    height: fit-content;
+    width: fit-content;
+}
+.welcome{
+    font-weight: 600;
+}
+
+.focus-label{
+    color: $input-placeholder-color;
+}
+.form-floating {
+>label { 
+    @include repeat;
+}
+
+}
+
+.btn-login{
+    padding:10px 30px;
+    background-color: $primary;
+    border-radius: 5px;
+}
+.login-space{>.fp a{color:#A5A5A5;}}
+.signup h6{
+    color: #A5A5A5;
+}
+
+/* Footer
+--------------------------------------------------------------------------------------------------------*/
+.copyright{justify-content: flex-end; padding-top: 130px;}
+.copyright a{padding-right: 15px; color: #ffffff;}
+
+
+/* Dashboard
+--------------------------------------------------------------------------------------------------------*/
+
+.sidebar{width: 246px;min-height: 100vh;}
+.logo{padding-top: 30px; padding-left: 30px;}
+.sidelinks{padding-top: 60px; padding-left: 30px;
+        ul li{margin: 10px 0; color: #ffffff;
+            .active {background-color: #ffffff; color: $primary; padding: 10px 5px; border-radius: 50px;
+                .default{display: none;}
+                .icon-active{padding-right: 10px;}}
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Media Queries
+--------------------------------------------------------------------------------------------------------*/
+@media (max-width:1399px) { }
+@media (max-width:1199px) {
+    .text-content > h1{font-size: 50px;}
+
+
+ }
+@media (max-width:991px) { 
+    .container-fluid{padding-top: 0;}
+    .text-content{padding-top: 0; >h1{font-size: 35px;}}
+    .login-box{margin-top: 20px;}
+    
+    .login-content>h4{justify-content: center; display: flex;}
+    .welcome, .header {justify-content: center;}
+    
+    .copyright{padding-top: 50px;}
+}
+@media screen and (max-width:767px) {
+    .header, .copyright {justify-content: center;}
+    .login-box{padding: 20px 15px;}
+    .main{padding: 0 50px;}
+    .welcome{font-size: 25px;}
+ }
+@media (max-width:575px) { 
+    .main{padding: 0 20px; }
+    .login-box{height: 600px;}
+    .container-fluid{padding-top: 30px;}
+    .text-content{display: none; > h1{font-size: 30px; }}
+}
+
+
+
+
+
+
+
+
+
+
+
