@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Company|Innerpage</title>
+    <link rel="shortcut icon" href="./images/company-icon.svg">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+</head>
+<body> 
+    <div class="global d-flex">
+
+        <!-- sidebar starts
+        ---------------------------------------------------------------------------------------------------------- -->
+        <div class="sidebar bg-primary">
+            <div class="logo">
+                <a href="./index.html" title="company-logo"><img src="./images/ic-company-yellow.svg" alt="company-logo"></a>
+            </div>
+
+            <div class="sidelinks">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html" title="Dashboard">
+                            <img src="./images/ic-dashboard-default.svg" alt="dashboard" class="default" />
+                            <img src="./images/ic-dashboard-active.svg" alt="dashboard" class="icon-active" />
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link elements" href="innerpage.html" title="Analysis">
+                            <img src="./images/ic-market-default.svg" alt="Market" class="default" />
+                            <img src="./images/ic-market-active.svg" alt="Market" class="icon-active" />
+                            <span>Market</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" title="Users">
+                            <img src="./images/ic-users-default.svg" alt="Users" class="default" />
+                            <img src="./images/ic-users-active.svg" alt="Users" class="icon-active" />
+                            <span>Users</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" title="Docs">
+                            <img src="./images/ic-docs-default.svg" alt="Docs" class="default" />
+                            <img src="./images/ic-docs-active.svg" alt="Docs" class="icon-active" />
+                            <span>Docs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" title="Offer">
+                            <img src="./images/ic-offer-default.svg" alt="offer" class="default" />
+                            <img src="./images/ic-offer-active.svg" alt="offer" class="icon-active" />
+                            <span>Offer</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" title="Help">
+                            <img src="./images/ic-help-default.svg" alt="help" class="default" />
+                            <img src="./images/ic-help-active.svg" alt="help" class="icon-active" />
+                            <span>Help</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" title="Setting">
+                            <img src="./images/ic-setting-default.svg" alt="setting" class="default" />
+                            <img src="./images/ic-setting-active.svg" alt="setting" class="icon-active" />
+                            <span>Setting</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- sidebar ends
+        ---------------------------------------------------------------------------------------------------------- -->
+
+        <div class="overlay"></div>
+
+        <!-- right content
+        ---------------------------------------------------------------------------------------------------------- -->
+
+        <!-- header starts
+        ---------------------------------------------------------------------------------------------------------- -->
+        <div class="right-content">
+            <nav class="navbar">
+                <button class="btn-menu toggle-sidebar" title="toggle-button" type="button"><img src="./images/menu-bar.svg" alt="sidebar menu">
+                </button>
+        
+                <div class="search-bar d-flex d-md-block  ">
+                  <input class="form-control shadow-none d-md-block d-none" type="search" placeholder="Search" aria-label="search">
+                  <button type="button" title="close-searchbar" class="btn btn-close-search btn-close" aria-label="Close"></button>
+              </div>
+        
+                <button class="btn btn-search d-md-none d-block ml-3" type="button"><img src="./images/search-icon.svg" alt="search"></button>
+                <div class="dropdown">
+                    <button class=" dropdown-toggle" title="dropdown-menu" type="button" data-bs-toggle="dropdown">
+                        <img src="./images/bell.svg" alt="notification" class="notification">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-md-start dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class=" dropdown-toggle profile" title="dropdown-menu" type="button" data-bs-toggle="dropdown">
+                        <img src="./images/profile.png" alt=" ">
+                        <span>Hi, John</span>
+                        <img src="./images/down-arrow.svg" alt=" " class="ic-down">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-md-start dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Help</a></li>
+                        <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        <!-- header ends
+        ---------------------------------------------------------------------------------------------------------- -->
+             
+        <!-- Main content
+        ---------------------------------------------------------------------------------------------------------- -->
+            <div class="market-content">
+                <div class="page-wrapper ">
+                    <div class="page-title">
+                        <h3>Market</h3>
+                    </div>
+                    
+                    <!-- form starts
+                    ---------------------------------------------------------------------------------------------------------- -->
+                    <div class="market-container ">
+                        <div class="row">
+                        <div class="column1">
+                            <h3>One Column</h3>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-floating">
+                            <input type="text" class="form-control" id="form-1" placeholder="Full Name">
+                            <label for="form-1">Full Name</label>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                        <div class="form-floating">
+                            <select class="form-select shadow-none" name="Designation" id="form-2" aria-label="DefaultSelectExample">
+                              <option selected>Select Occupation </option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <!-- <label for="form-2">Select Designation</label> -->
+                        </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-floating">
+                            <input type="text" class="form-control" id="form-3" placeholder="Description">
+                            <label for="form-3">Description</label>
+                          </div>
+                        </div>
+                      </div>
+                          
+                
+                
+                          <!-- second column starts
+                            ---------------------------------------------------------------------------------------------------------- -->
+                
+                          <div class="column2">
+                            <h3>Two Column</h3>
+                          </div>
+                          <div class="row mt-4">
+                            <div class=" col-md-6">
+                              <div class="form-floating  ">
+                                <input type="text" class="form-control text-dark" id="floatinginput" value="John Deo"
+                                  placeholder="First Name">
+                                <label for="floatinginput">Full Name</label>
+                              </div>
+                            </div>
+                            <div class=" col-md-6">
+                              <div class="form-floating ">
+                                <input type="text" class="form-control text-secondary" id="underlinedashed" value="John Doe" placeholder="Username" disabled>
+                                <label for="underlinedashed">disabled</label>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class=" form-floating " >
+                                  <input type="text" class="focus form-control shadow-none  text-dark"  id="floatingInput"   placeholder="First Name..">
+                                  <label for="floatingInput" class="focus-label">Focus</label>
+                              </div>
+                            </div>
+                            <div class=" col-md-6">
+                              <div class="eye form-floating ">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                  <label for="floatingPassword">Password</label>
+                                <button class="btn show-password" type="button"><img src="images/eye.svg"
+                                        alt="password"></button>
+                            </div>
+                            </div>
+                           
+                          </div>
+                
+                
+                          <!-- third column starts
+                            ---------------------------------------------------------------------------------------------------------- -->
+                
+                          <div class="column3">
+                            <h3>Third Column</h3>
+                          </div>
+                          <div class="row mt-3">
+
+                            <div class="col-md-4">
+                              <div class="input-group has-validation mb-3 mb-md-4 error-input">
+                                <div class="form-floating text-secondary is-invalid">
+                                  <input type="text" class="form-control is-invalid" id="floatingInputGroup2" value="John" placeholder="Username" required>
+                                  <label for="floatingInputGroup2" >Error</label>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please Enter your Full Name
+                                </div>
+                              </div> 
+                            </div>
+
+                            <div class=" col-md-4">
+                              <div class="form-floating">
+                                <select class="form-select " name="Designation"   >
+                                  <option selected> Country </option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                                <!-- <label for="form-2">Designation</label> -->
+                                <div class="below-select">
+                                  Choose your Country
+                                </div>
+                              </div>
+                            </div>
+
+
+                            
+                            <div class=" col-md-4">
+                              <div class="form-floating ">
+                                <input type="text" class="form-control text-dark" id="floatinglName" value="Placeholder" placeholder="First Name">
+                                <label for="floatinglName">Label</label>
+                              </div>
+                            </div>
+                            
+                          </div>
+                
+                          <!-- Fourth column starts
+                            ---------------------------------------------------------------------------------------------------------- -->
+                
+                            <div class="column2">
+                              <h3>Four Column</h3>
+                            </div>
+                            <div class="row mt-4">
+                              <div class=" col-md-3 col-lg-3 col-md-4 ">
+                                <div class="form-floating  ">
+                                  <input type="text" class="form-control text-dark" id="floatingname" value="John Deo"
+                                    placeholder="First Name">
+                                  <label for="floatingname">Full Name</label>
+                                </div>
+                              </div>
+                              <div class=" col-md-3 col-lg-3 col-md-4 ">
+                                <div class="form-floating ">
+                                  <input type="text" class="form-control text-secondary" id="underlineDashed" value="John Doe" placeholder="Username" disabled>
+                                  <label for="underlineDashed">disabled</label>
+                                </div>
+                              </div>
+                              
+                              <div class=" col-md-3 col-lg-3 col-md-4 ">
+                                <div class="eye form-floating ">
+                                  <input type="password" class="form-control" id="floatingpassword" placeholder="Password">
+                                  <label for="floatingpassword">Password</label>
+                                  <button class="btn show-password" type="button"><img src="images/eye.svg"
+                                          alt="password"></button>
+                                </div>
+                              </div>
+                              <div class="col-md-3 col-lg-3 col-md-4 ">
+                                <div class=" form-floating " >
+                                    <input type="text" class="focus form-control shadow-none  text-dark"  id="floatingFocus"   placeholder="First Name..">
+                                    <label for="floatingFocus" class="focus-label">Focus</label>
+                                </div>
+                              </div>
+                             
+                            </div>
+                
+                          <!-- Fifth column starts (Other form Elements)
+                            ---------------------------------------------------------------------------------------------------------- -->
+                
+                          <div class="column5 ">
+                            <h3>Other Elements</h3>
+                            <h5>File Upload</h5>
+                          </div>
+                          <div class="uploadbutton d-flex align-items-center form-check-inline ">         
+                            <input type="file" id="imgupload" class="uploadbutton" style="display:none;"> 
+                            <button id="OpenImgUpload" title="upload-button" class="upload border-0 d-flex form-check-inline align-items-center" style="background-color: #F6F6F6;">
+                              <img src="./images/ic-upload.svg" alt="upload">
+                              <span class="text">Upload</span>
+                            </button>
+                            <span class="nis text-secondary">no item selected</span>
+                          </div>
+                      
+                          <!-- Sixth column starts (Checkbox)
+                            ---------------------------------------------------------------------------------------------------------- -->
+                
+                          <div class="column6 ">
+                            <h5>Checkbox</h5>
+                          </div>
+                          <div class="formcheck d-flex ">
+                          <div class="form-check form-check-inline ">
+                            <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Selected
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Not yet Selected
+                            </label>
+                          </div>
+                          </div>
+                
+                          <!-- Seventh column starts (Radiobutton)
+                            ---------------------------------------------------------------------------------------------------------- -->
+                
+                          <div class="column7 ">
+                            <h5>Radio Button</h5>
+                          </div>
+                          <div class="formcheck d-flex ">
+                          <div class="form-check form-check-inline ">
+                            <input class="form-check-input shadow-none" type="radio" value="option1" name="flexRadioDefault" id="Radio1" checked>
+                            <label class="form-check-label" for="Radio1">Selected</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault" value="option2" id="Radio2">
+                            <label class="form-check-label" for="Radio2">Not yet Selected</label>
+                          </div>
+                          </div>
+                
+                          <!-- Eighth column starts (Call to action)
+                            ---------------------------------------------------------------------------------------------------------- -->
+                
+                          <div class="column8 ">
+                            <h5>Call to action</h5>
+                          </div>
+                          <div class="pri-sec d-sm-flex">
+                            <button title="primary-button" class="primary form-check-inline border-0  mb-2 ">
+                              Primary
+                            </button>
+                            <button title="secondary-button" class="secondary form-check-inline mb-2 ">
+                              Secondary 
+                            </button>
+                            <button class="disabled form-check-inline mb-2" disabled>
+                              disabled 
+                            </button>
+                          </div>
+                
+                        
+                        <!-- Tabbing starts
+                            ---------------------------------------------------------------------------------------------------------- -->
+                
+                        <div class="tabs " >
+                          <div class="tabbing1">
+                            Tabs
+                          </div>
+                
+                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="tab-item" role="presentation">
+                              <button title="tab 1" class="tab-link active" id="tab1" data-bs-toggle="tab" data-bs-target="#para1" type="button"
+                                role="tab" aria-selected="true">Tab1</button>
+                            </li>
+                            <li class="tab-item" role="presentation">
+                              <button title="tab 2" class="tab-link" data-bs-toggle="tab" data-bs-target="#para2" type="button" role="tab"
+                                aria-selected="false">Tab2</button>
+                            </li>
+                            <li class="tab-item" role="presentation">
+                              <button title="tab 3" class="tab-link" data-bs-toggle="tab" data-bs-target="#para3" type="button" role="tab"
+                               aria-selected="false">Tab3</button>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="para1" role="tabpanel">
+                              First, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            </div>
+                
+                            <div class="tab-pane fade show " id="para2" role="tabpanel">
+                              Second, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            </div>
+                
+                            <div class="tab-pane fade show " id="para3" role="tabpanel">
+                              Third, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            </div>
+                          </div>
+                        </div>
+                
+                
+                
+                
+                        <!-- End of Main-Content
+                            ---------------------------------------------------------------------------------------------------------- -->
+                
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
